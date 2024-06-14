@@ -27,11 +27,14 @@ function Register() {
     e.preventDefault();
     if (handleValidation) {
       try {
-        const { data } = await axios.post("http://localhost:5000/auth", {
-          name: cred.name,
-          email: cred.email,
-          password: cred.password,
-        });
+        const { data } = await axios.post(
+          "http://chatappbackup.onrender.com/auth",
+          {
+            name: cred.name,
+            email: cred.email,
+            password: cred.password,
+          }
+        );
         if (data.success) {
           localStorage.setItem("chatme-user-data", JSON.stringify(data.user));
           navigate("/login");
