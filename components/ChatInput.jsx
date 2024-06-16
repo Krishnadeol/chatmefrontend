@@ -33,7 +33,7 @@ function ChatInput({ handleSendMsg }) {
           {showEmojiPicker && <Picker onEmojiClick={handleEmojiClicks} />}
         </div>
       </div>
-      <form className="Input-container" onSubmit={(e) => handleSend(e)}>
+      <form className="input-container" onSubmit={(e) => handleSend(e)}>
         <input
           type="text"
           placeholder="type your message"
