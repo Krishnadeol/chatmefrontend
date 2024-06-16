@@ -25,7 +25,7 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (handleValidation) {
+    if (handleValidation()) {
       try {
         const { data } = await axios.post(
           "http://chatappbackup.onrender.com/auth",
@@ -42,7 +42,7 @@ function Register() {
           toast.error(data.error, tobj);
         }
       } catch (error) {
-        toast.error("user exists", tobj);
+        toast.error("Data Base is taking too long to respond", tobj);
 
         console.log({ error: error.message });
       }
@@ -59,7 +59,7 @@ function Register() {
       toast.error("Password should atleast 5 char long", tobj);
       return false;
     } else if (password !== cpassword) {
-      toast.error("Confired password does not match", tobj);
+      toast.error("Confirmed password does not match", tobj);
       return false;
     }
     return true;

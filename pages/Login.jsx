@@ -20,7 +20,7 @@ function Login() {
     draggable: true,
   };
   useEffect(() => {
-    if (localStorage.getItem("chatme-user-data")) {
+    if (localStorage.getItem("chatme2-user-data")) {
       navigate("/");
     }
   }, [navigate]);
@@ -39,7 +39,7 @@ function Login() {
         );
 
         if (data.success) {
-          localStorage.setItem("user-data", JSON.stringify(data.user));
+          localStorage.setItem("chatme2-user-data", JSON.stringify(data.user));
           navigate("/");
         } else if (!data.success) {
           toast.error(data.error, tobj);
