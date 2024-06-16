@@ -28,7 +28,7 @@ function Register() {
     if (handleValidation()) {
       try {
         const { data } = await axios.post(
-          "http://chatappbackup.onrender.com/auth",
+          "https://chatappbackup.onrender.com/auth",
           {
             name: cred.name,
             email: cred.email,

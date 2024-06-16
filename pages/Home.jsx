@@ -22,7 +22,7 @@ function Home() {
         if (curUser.isAvatarSet) {
           console.log(curUser, "current user");
           const response = await axios.get(
-            `http://chatappbackup.onrender.com/getcontacts?id=${curUser._id}`
+            `https://chatappbackup.onrender.com/getcontacts?id=${curUser._id}`
           );
           setUsers(response.data);
           setLoad(false);

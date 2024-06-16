@@ -31,7 +31,7 @@ function Login() {
     if (handleValidation) {
       try {
         const { data } = await axios.post(
-          "http://chatappbackup.onrender.com/auth/login",
+          "https://chatappbackup.onrender.com/auth/login",
           {
             email: cred.email,
             password: cred.password,
