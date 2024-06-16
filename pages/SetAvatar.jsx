@@ -36,7 +36,7 @@ function SetAvatar() {
       const user = await JSON.parse(localStorage.getItem("chatme-user-data"));
       // api call for setting image in backend
       const { data } = await axios.post(
-        `http://chatappbackup.onrender.com/setA/${user._id}`,
+        `https://chatappbackup.onrender.com/setA/${user._id}`,
         {
           image: avatars[selectedAvatar],
         }
