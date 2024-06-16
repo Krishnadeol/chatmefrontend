@@ -2,15 +2,7 @@ This is mern stack based Real time chat application using socket.io.
 Designed for private and secure one to one text meassages.
 ![image](https://github.com/Krishnadeol/chatmefrontend/assets/114430936/9b795d7f-56d4-4e12-aef2-50441ccd8804)
 
-
-
-
-
-
-
-
-
-
+![Screenshot 2024-06-16 171208](https://github.com/Krishnadeol/chatmefrontend/assets/114430936/43174ea2-aebf-4373-8135-440ff7fa5831)
 
 
 
